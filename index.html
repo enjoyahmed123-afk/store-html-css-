@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <!-- ✅ تعديل 1: ضفت viewport عشان الصفحة تتعرض صح على الموبايل -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✅ تعديل 2: غيرت العنوان من "مثال 1" لاسم المتجر -->
+  <title>متجري</title>
+    
+  <!-- ✅ تعديل 3: نقلت الفونت قبل style.css، وحمّلت Cairo و Tajawal الاتنين -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cairo:wght@200..1000&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <span class="logo">Store</span>
+        <a href="#">الرئيسية</a>
+        <a href="#">المنتجات</a>
+        <a href="#">اتصل بنا</a>
+    </nav>
+    <!-- Main Content -->
+    <div class="title-container">
+        <span class="badge">New</span>
+        <h1 class="main-title">  Welcome in Our Store  </h1>
+        <p class="description">
+            أهلا بكم فى متجركم ستجدون كل شئ بضغطة زر واحدة
+        </p>
+        <button class="shop-now-btn">تسوق الآن</button>
+    </div>
+    <!-- products -->
+     <!-- الهيرو -->
+  <section class="hero">
+    <span class="hero-badge">وصل حديثاً</span>
+    <h1>أحدث المنتجات بأفضل الأسعار</h1>
+    <p>تسوّق دلوقتي واستمتع بخصومات تصل إلى ٥٠٪</p>
+    <a href="#products" class="hero-btn">تسوّق الآن</a>
+  </section>
+
+  <!-- المنتجات -->
+  <section class="products" id="products">
+
+    <div class="product-card">
+      <div class="card-image">
+        <img src="glass-1572635196237-14b3f281503f.jfif" alt="نظارة شمس">
+        <span class="badge badge-discount">خصم ٥٠٪</span>
+        <span class="badge badge-new">جديد</span>
+        <span class="heart">♡</span>
+      </div>
+      <div class="card-body">
+        <h2>نظارة شمس</h2>
+        <p class="rating"><span class="stars">★★★★☆</span> (١٢٠ مراجعة)</p>
+        <p class="price"><span class="new-price">٢٥٠ ج</span> <span class="old-price">٥٠٠ ج</span></p>
+        <button class="add-btn">أضف للسلة</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-image">
+        <img src="photo  camera-1526170375885-4d8ecf77b99f.jfif" alt="كاميرا">
+        <span class="badge badge-discount">خصم ٥٠٪</span>
+        <span class="badge badge-new">جديد</span>
+        <span class="heart">♡</span>
+      </div>
+      <div class="card-body">
+        <h2>كاميرا فورية</h2>
+        <p class="rating"><span class="stars">★★★★★</span> (٨٥ مراجعة)</p>
+        <p class="price"><span class="new-price">١٬٥٠٠ ج</span> <span class="old-price">٣٬٠٠٠ ج</span></p>
+        <button class="add-btn">أضف للسلة</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-image">
+        <img src="photo bags-1553062407-98eeb64c6a62.jfif" alt="شنطة ظهر">
+        <span class="badge badge-discount">خصم ٥٠٪</span>
+        <span class="badge badge-new">جديد</span>
+        <span class="heart">♡</span>
+      </div>
+      <div class="card-body">
+        <h2>شنطة ظهر</h2>
+        <p class="rating"><span class="stars">★★★★☆</span> (٦٤ مراجعة)</p>
+        <p class="price"><span class="new-price">٤٠٠ ج</span> <span class="old-price">٨٠٠ ج</span></p>
+        <button class="add-btn">أضف للسلة</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-image">
+        <img src="photo shose-1542291026-7eec264c27ff.jfif" alt="حذاء رياضي">
+        <span class="badge badge-discount">خصم ٥٠٪</span>
+        <span class="badge badge-new">جديد</span>
+        <span class="heart">♡</span>
+      </div>
+      <div class="card-body">
+        <h2>حذاء رياضي</h2>
+        <p class="rating"><span class="stars">★★★★★</span> (٢١٠ مراجعة)</p>
+        <p class="price"><span class="new-price">٦٠٠ ج</span> <span class="old-price">١٬٢٠٠ ج</span></p>
+        <button class="add-btn">أضف للسلة</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-image">
+        <img src="photo ريحة-1585386959984-a4155224a1ad.jfif" alt="زجاجة عطر">
+        <span class="badge badge-discount">خصم ٥٠٪</span>
+        <span class="badge badge-new">جديد</span>
+        <span class="heart">♡</span>
+      </div>
+      <div class="card-body">
+        <h2>زجاجة عطر</h2>
+        <p class="rating"><span class="stars">★★★★☆</span> (٩٧ مراجعة)</p>
+        <p class="price"><span class="new-price">٣٥٠ ج</span> <span class="old-price">٧٠٠ ج</span></p>
+        <button class="add-btn">أضف للسلة</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-image">
+        <img src="photo سمعات راس-1505740420928-5e560c06d30e.jfif" alt="سماعات رأس">
+        <span class="badge badge-discount">خصم ٥٠٪</span>
+        <span class="badge badge-new">جديد</span>
+        <span class="heart">♡</span>
+      </div>
+      <div class="card-body">
+        <h2>سماعات رأس</h2>
+        <p class="rating"><span class="stars">★★★★★</span> (١٨٠ مراجعة)</p>
+        <p class="price"><span class="new-price">٧٥٠ ج</span> <span class="old-price">١٬٥٠٠ ج</span></p>
+        <button class="add-btn">أضف للسلة</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- بانر العرض -->
+  <section class="offer-banner" id="offer">
+    <h2>عرض لفترة محدودة</h2>
+    <p>استخدم الكود ده عند الدفع واحصل على خصم إضافي</p>
+    <span class="coupon">SALE50</span>
+    <br>
+    <a href="#products" class="offer-btn">استخدم الكود</a>
+  </section>
+
+    <!-- Footer -->
+  <footer class="footer" id="footer">
+      <p>© 2026 متجري. جميع الحقوق محفوظة.</p>
+      <p>للتواصل: store@example.com</p>
+  </footer>
+    <!-- Chat Button -->
+    <a href="#" class="chat-btn">💬</a>
+
+
+</body>
+</html>

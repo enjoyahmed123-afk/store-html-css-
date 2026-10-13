@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cairo:wght@200..1000&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body {
+    /* ✅ تعديل 5: شلت padding: 10px لأنه كان بيعمل مسافة حوالين الصفحة ويبوّظ عرض النافبار */
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 19%, rgba(100, 87, 110, 1) 50%, rgba(148, 187, 233, 1) 81%);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;               /* ✅ تعديل 6: ضفت left: 0 عشان النافبار تلزق في الحافة */
+    width: 100%;
+    background: #aeeec9;
+    background: radial-gradient(circle, rgba(174, 238, 201, 1) 59%, rgba(148, 187, 233, 1) 85%);
+    color: rgb(25, 24, 24);
+    padding: 10px 0;
+    z-index: 100;          /* ✅ تعديل 7: عشان النافبار تفضل فوق أي عنصر تاني */
+}
+
+.logo {
+    font-size: 24px;
+    margin-right: 20px;    /* ✅ تعديل 8: الصفحة RTL فاللوجو على اليمين، فغيرت margin-left لـ margin-right */
+    font-family: "Ballet", cursive;
+    font-weight: 800;      /* ✅ تعديل 9: كان عندك bold وبعدها 200 فالتاني بيلغي الأول. خليتها قيمة واحدة تقيلة */
+    font-style: normal;
+}
+
+.navbar a {
+    display: inline-block;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    padding: 7px 55px;
+    margin: 0 8px;
+}
+.navbar a:hover {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    color: #fff;
+    border-radius: 5px;
+}
+.chat-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    text-decoration: none;
+    z-index: 100;
+}
+/* الحاوية الرئيسية */
+.title-container {
+    text-align: center;
+    margin: 70px; /* مسافة من الأعلى لتجنب التداخل مع النافبار */
+}
+
+/* تنسيق الشارة الصغيرة */
+.badge {
+    display: inline-block;
+    background-color: #ff4757;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Ballet", cursive;
+    pointer-events: none; /* منع التفاعل مع الشارة */
+    margin-bottom: 10px; /* مسافة بين الشارة والعنوان */
+}
+
+/* تنسيق العنوان الرئيسي */
+.main-title {
+  color: #2f3542; 
+  font-family: "Ballet", cursive;
+  font-weight: 1000; /* جعل الخط ثقيل */
+  font-size: 50px; /* زيادة حجم الخط */
+  margin-bottom: 5px;
+}
+.title-container p {
+    font-size: 30px;
+    margin-top: 5px;
+}
+.description {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.title-container .shop-now-btn{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #ff6b81;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.shop-now-btn:hover {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    cursor: pointer;
+}
+/* الهيرو */
+.hero {
+    margin-top: 60px;         /* عشان النافبار متغطيهوش */
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.hero-badge {
+    display: inline-block;
+    background: #ff4757;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: white;
+    color: #764ba2;
+    padding: 12px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+}
+/* المنتجات */
+.products{
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+.product-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1%;
+    vertical-align: top;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-image {
+    position: relative;
+}
+.card-image img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card-image .badge {
+    position: absolute;
+    top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 700;
+    z-index: 2;
+}
+.badge-discount {
+    right: 10px;
+    background-color: #ff6b81;
+}
+.badge-new {
+    left: 10px;
+    background-color: #1e90ff;
+}
+.card-image .heart {
+    position: absolute;
+    bottom: 10px;             
+    left: 10px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;       
+    background: white;
+    color: crimson;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+.card-body h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #0a53ee;
+}
+.rating {
+    margin: 10px 0;
+    color: #ffc107;
+    font-size: 20px;
+}
+.stars {
+    color: #ffc107;
+    font-size: 20px;
+}
+.price {
+    margin: 8px 0 12px;
+}
+.new-price {
+    font-size: 20px;
+    color: #ff6b81;
+    font-weight: bold;
+}
+.old-price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.add-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-btn:hover {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+.offer-banner {
+    background: #ff6b81;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgb(108, 86, 155) 50%, rgb(11, 92, 132) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+.offer-banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.offer-banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.offer-banner .coupon {
+    display: inline-block;
+    background-color: #fff;
+    color: #ff6b81;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.offer-banner .coupon:hover {
+    background-color: #ff6b81;
+    color: #fff;
+    cursor: pointer;
+}
+.offer-banner .offer-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.offer-banner .offer-btn:hover {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+/* footer */
+.footer {
+    background: #1e90ff;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgb(108, 86, 155) 50%, rgb(11, 92, 132) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
